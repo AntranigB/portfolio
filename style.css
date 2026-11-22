@@ -860,10 +860,6 @@ dialog.easter-egg::backdrop{background:#0009}
 dialog.easter-egg .egg-close{display:block;position:static;margin:20px auto 0;padding:8px 12px;background:transparent;color:inherit;border:0;text-decoration:underline;cursor:pointer}
 html[data-theme=dark] dialog.easter-egg{background:#1b2530;color:#edf2f7;border-color:#8090a0}
 
-.phone-reveal-button{font:inherit;color:inherit;background:transparent;border:1px solid currentColor;border-radius:18px;padding:6px 12px;cursor:pointer}
-.phone-reveal-button:hover{background:color-mix(in srgb,currentColor 8%,transparent)}
-.phone-reveal-button:focus-visible{outline:2px solid #3e9fe8;outline-offset:3px}
-.phone-reveal [hidden]{display:none!important}
 
 .presentation-viewer{margin:32px 0}
 .presentation-slide{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#fff}

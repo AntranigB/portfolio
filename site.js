@@ -75,31 +75,6 @@ motion.addEventListener('change', syncPlayback);
 document.addEventListener('visibilitychange', syncPlayback);
 syncPlayback();
 
-// A small obstacle to basic HTML scrapers, not a privacy or access-control feature.
-// The payload is decoded only after a visitor activates the native button.
-{
-  const reveals = [...document.querySelectorAll('.phone-reveal')];
-  reveals.forEach(container => {
-    const button = container.querySelector('.phone-reveal-button');
-    button?.addEventListener('click', () => {
-      try {
-        const phone = JSON.parse(atob(container.dataset.phone));
-        if (typeof phone.display !== 'string' || !/^[+0-9]+$/.test(phone.dial)) return;
-        reveals.forEach(other => {
-          const link = other.querySelector('.phone-number');
-          const control = other.querySelector('.phone-reveal-button');
-          if (!link || !control) return;
-          link.textContent = phone.display;
-          link.href = 'tel:' + phone.dial;
-          link.hidden = false;
-          control.hidden = true;
-        });
-        container.querySelector('.phone-number')?.focus();
-      } catch { button.textContent = 'Unable to reveal'; }
-    });
-  });
-}
-
 // Manual slide viewer: only the current slide image is loaded; no slideshow timer.
 {
   const refresh = () => {
