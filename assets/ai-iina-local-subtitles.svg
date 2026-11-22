@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Local Subtitles for IINA</title>
+  <desc id="desc">A selected audio track feeds local Whisper transcription, which produces a clickable transcript and a subtitled video.</desc>
+  <rect width="960" height="540" fill="#132036"/>
+  <g font-family="system-ui, sans-serif">
+    <text x="52" y="87" fill="#f7f9fc" font-size="47" font-weight="700">Local Subtitles for IINA</text>
+    <text x="54" y="133" fill="#b6c8e3" font-size="25">On-device transcription for a video or time range</text>
+    <g fill="#22334d" stroke="#526b8d" stroke-width="2">
+      <rect x="54" y="214" width="232" height="112" rx="15"/>
+      <rect x="360" y="214" width="232" height="112" rx="15"/>
+      <rect x="666" y="163" width="240" height="96" rx="15"/>
+      <rect x="666" y="281" width="240" height="96" rx="15"/>
+    </g>
+    <g fill="none" stroke="#79d6c5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M307 270h34m-9-9 9 9-9 9"/>
+      <path d="M613 270h19v-59h15m-8-8 8 8-8 8M632 270v59h15m-8-8 8 8-8 8"/>
+    </g>
+    <g fill="#f7f9fc" font-size="23" font-weight="650" text-anchor="middle">
+      <text x="170" y="264">Video in IINA</text>
+      <text x="476" y="264">Whisper Turbo</text>
+      <text x="786" y="210">Searchable transcript</text>
+      <text x="786" y="330">Subtitled video</text>
+    </g>
+    <g fill="#b6c8e3" text-anchor="middle" font-size="17">
+      <text x="170" y="292">Selected audio track</text>
+      <text x="476" y="292">Runs on the Mac</text>
+      <text x="786" y="234">Click a line to seek</text>
+      <text x="786" y="354">Selectable captions</text>
+    </g>
+    <text x="54" y="474" fill="#79d6c5" font-size="22">Workflow illustration</text>
+  </g>
+</svg>
